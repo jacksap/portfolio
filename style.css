@@ -1,9 +1,14 @@
 body {
     min-height: 100vh;
     margin: 0 auto;
-    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    font-family: 'Karla', sans-serif;
+    margin-right: 95px;
 }
-
+main{
+    width: 100vw;
+    margin-left: 2vw;
+}
 .nav-bar {
     position: absolute;
     top: 0;
@@ -11,11 +16,13 @@ body {
 }
 
 .main-nav {
-    font-size: 14px;
+    font-size: 16px;
     display: flex;
     list-style: none;
     margin: 0;
     line-height: 50px;
+    font-family: 'Spectral', serif;
+    margin-right: 5%;
 }
 
 .main-nav li:first-child {
@@ -33,35 +40,31 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color:rgba(239, 239, 239, .8);
   }
 
 .logo {
     font-size: 25px;
 }
 
-#background {
-    background-color: #e4efec;
+#topfiller {
     height: 300px;
 }
 
-.summary {
-    margin: -240px 0 0 40px;
+.intro h1 {
+    font-size: 3.5em;
+    font-family: 'Spectral', serif;
 }
 
-.summary h1 {
-    font-size: 80px;
-    color: #749990;
+.intro-i {
+    min-width: 300px;
+    width: 92%;
 }
-
-.summary img {
-    box-shadow: 3px 3px 15px 0px rgba(199,199,199,1);
-    width: 70%;
+.intro-img {
+    box-shadow: -3px 3px 15px 0px rgba(192, 182, 180, 1);
 }
-
-.summary-img {
-    text-align: center;
-}
+/* .intro-title {
+    margin-left: inherit;
+} */
 
 #projects {
     padding-top: 50px;
@@ -70,7 +73,7 @@ body {
 .flex-container {
     text-align: center;
     font-size: 15px;
-    padding-left: 40px;
+    padding-left: 15px;
 }
 .contact {
     text-align: center;
@@ -92,31 +95,40 @@ body {
 }
 
 #skills {
-    background-color: #e4efec;
     padding: 30px;
+    font-family: 'Karla', sans-serif;
+    margin: auto;
 }
 
 .skills-icons {
-    width: 50px;
+    width: 30px;
     display: inline-block;
-    padding: 20px;
+    padding: 25px;
+}
+#tools {
+    padding: 30px;
+    font-family: 'Karla', sans-serif;
+    margin: auto;
+}
+
+.tools-icons {
+    width: 30px;
+    display: inline-block;
+    padding: 25px;
 }
 
 ul {
     list-style: none;
     font-size: 11px;
     line-height: 25px;
-    color: #616161;
 }
 
 a {
     text-decoration: none;
-    color: #749990;
 }
 
 ul a {
     text-decoration: none;
-    color: #616161;
 }
 
 #news {
@@ -132,63 +144,61 @@ img {
 }
 
 .button a:hover {
-    background-color: #f2f2f2;
 }
 
 .btn {
     border: 1px #cdd1d0 solid;
-    background-color: #e4efec;
     padding: 10px;
 }
 
+h2 {
+    text-align: center;
+    font-family: 'Spectral', serif;
+}
 
 h4 {
-    font-size: 14px;
+    font-size: 16px;
+    padding: 2%;
+    margin: 5%;
 }
 
 h3 {
-    font-size: 16px;
+    font-size: 19px;
 }
 
 p {
-    font-size: 13px;
+    font-size: 14px;
+    font-family: 'Karla', sans-serif;
 }
 
-.experience {
-    padding: 30px;
-    background-color: #f2f2f2;
-}
-.experience h2, #projects h2, #skills h2  {
-    text-align: center;
-    color: #749990;
-}
 
-.experience-right {
-    text-align: right;
-    padding-right: 52%;
+@media screen and (max-width: 1100px) {
+    h1, h4 {
+        margin: 0 auto;
+    }
+    .intro {
+        margin: 0 15%;
+    }
+    .intro-title {
+        margin-left: 5%;
+    }
+    
 }
-.experience-left {
-    text-align: left;
-    padding-left: 52%;
-}
-
-.experience-dates {
-    color: #749990;
-}
-.experience img {
-    box-shadow: 3px 3px 15px 0px rgba(199,199,199,1);
-    width: 60%;
-}
-.experience-detail {
-    display: flex;
-    justify-content: flex-start;
-    text-align: center;
-    padding: 0 100px;
+@media screen and (max-width: 540px) {
+    #topfiller {
+        height: 150px;
+    }
+    body {
+        margin-right: 60px;
+    }
+    img {
+        width: 100%;
+    }
 }
 
 @media screen and (min-width: 540px) {
-    .summary {
-        margin: -190px 0 0 100px;
+    .intro {
+        margin: -190px 0 0 125px;
         display: flex;
     }
 
@@ -211,17 +221,9 @@ p {
         text-align: left;
     }
 
-    .about {
+    .intro {
         display: flex;
     }
-    .about-text {
-        padding-top: 7%;
-    }
-
-    .about-img {
-        width: 50%;
-    }
-    
 }
 
 @media screen and (min-width: 1080px) {
