@@ -13,8 +13,20 @@ main{
     position: absolute;
     top: 0;
     width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    height: 90px;
 }
-
+.project {
+    display: flex;
+    margin-left: 113px;
+}
+.project-text, .project-img {
+    width: 50%;
+}
+.project-img {
+    margin-top: 2%;
+    width: 80vw;
+}
 .main-nav {
     font-size: 16px;
     display: flex;
@@ -57,7 +69,7 @@ main{
 
 .intro-i {
     min-width: 300px;
-    width: 92%;
+    width: 70%;
 }
 .intro-img {
     box-shadow: -3px 3px 15px 0px rgba(192, 182, 180, 1);
@@ -72,12 +84,16 @@ main{
 
 .flex-container {
     text-align: center;
+    justify-content: space-evenly;
     font-size: 15px;
     padding-left: 15px;
 }
 .contact {
     text-align: center;
     padding: 40px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 .contact-icons {
     display: flex;
@@ -94,27 +110,22 @@ main{
     border: 1px #cdd1d0 solid;
 }
 
-#skills {
+#skills, #tools {
     padding: 30px;
     font-family: 'Karla', sans-serif;
     margin: auto;
 }
 
-.skills-icons {
-    width: 30px;
+.skills-icons, .tools-icons {
+    width: 50px;
+    height: 50px;
     display: inline-block;
-    padding: 25px;
+    margin: 15px;
+    text-align: center;
+    justify-content: center;
 }
-#tools {
-    padding: 30px;
-    font-family: 'Karla', sans-serif;
-    margin: auto;
-}
-
-.tools-icons {
-    width: 30px;
-    display: inline-block;
-    padding: 25px;
+#skills h2, #tools h2 {
+    text-align: center;
 }
 
 ul {
@@ -158,8 +169,8 @@ h2 {
 
 h4 {
     font-size: 16px;
+    margin-left: 5%;
     padding: 2%;
-    margin: 5%;
 }
 
 h3 {
@@ -194,6 +205,9 @@ p {
     img {
         width: 100%;
     }
+    .nav-bar {
+        height: 65px;
+    }
 }
 
 @media screen and (min-width: 540px) {
@@ -209,8 +223,8 @@ p {
         flex-flow: row wrap;
         padding-top: 20px;
         padding-bottom: 20px;
-        margin: auto;
-        padding-left: 40px;
+        margin-right: 3%;
+        padding-left: 0px;
     }
 
     .col-3 {
@@ -230,4 +244,9 @@ p {
     .col-3 {
         width: 24%;
     }
+}
+.contact-img {
+    width: 250px;
+    margin-left: 10%;
+    margin-top: 20px;
 }
